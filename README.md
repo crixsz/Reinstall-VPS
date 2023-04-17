@@ -55,6 +55,7 @@
     <br><br>
   </h3>
   <img src="https://raw.githubusercontent.com/MeowLove/Network-Reinstall-System-Modify/master/background/Preview2021.png">
+  <h3> TESTED: Ubuntu 20 --> Debian 10 --> Ubuntu 20 </h3>
 </div>
 <div align="center">
   <h3><br>ONE-CLICK RUN </h3>
