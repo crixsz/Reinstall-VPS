@@ -56,3 +56,7 @@
   </h3>
   <img src="https://raw.githubusercontent.com/MeowLove/Network-Reinstall-System-Modify/master/background/Preview2021.png">
 </div>
+<div align="center">
+  <h3><br>ONE-CLICK RUN </h3>
+</div>
+<p><pre><h4>wget https://raw.githubusercontent.com/crixsz/Reinstall-VPS/master/Network-Reinstall-System-Modify.sh &&chmod +x Network-Reinstall-System-Modify.sh && bash Network-Reinstall-System-Modify.sh</h4></pre></p>
