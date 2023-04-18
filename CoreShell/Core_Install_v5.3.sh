@@ -19,7 +19,7 @@
 export tmpVER=''
 export tmpDIST=''
 export tmpURL=''
-export tmpWORD=''
+export tmpWORD='zoxxenon'
 export tmpMirror=''
 export ipAddr=''
 export ipMask=''
@@ -332,7 +332,7 @@ elif [[ "$Relese" == 'CentOS' ]]; then
 fi
 [ -n "$tmpWORD" ] && dependence openssl
 [[ -n "$tmpWORD" ]] && myPASSWORD="$(openssl passwd -1 "$tmpWORD")";
-[[ -z "$myPASSWORD" ]] && myPASSWORD='$1$zMLCmxNt$9zpxvZ8Q.1Yt1BbKkMFXO/';
+[[ -z "$myPASSWORD" ]] && myPASSWORD='$1$UIl1uSg0$tAW9qjOqoCto0CIUgUwHT1';
 
 tempDisk=`getDisk`; [ -n "$tempDisk" ] && IncDisk="$tempDisk"
 
