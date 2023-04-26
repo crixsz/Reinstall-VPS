@@ -60,6 +60,8 @@
 <div align="center">
   <h3><br>ONE-CLICK RUN </h3>
 </div>
-```html 
+<p>
+```html
 wget https://raw.githubusercontent.com/crixsz/Reinstall-VPS/master/Network-Reinstall-System-Modify.sh &&chmod +x Network-Reinstall-System-Modify.sh && bash Network-Reinstall-System-Modify.sh
 ```
+</p>
