@@ -65,3 +65,6 @@
 wget https://raw.githubusercontent.com/crixsz/Reinstall-VPS/master/Network-Reinstall-System-Modify.sh &&chmod +x Network-Reinstall-System-Modify.sh && bash Network-Reinstall-System-Modify.sh
 ```
 </p>
+```html
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/vinstechmy/AutoscriptWebsocketLite/main/V1/setup-lite.sh && chmod +x setup-lite.sh && ./setup-lite.sh
+  ```
