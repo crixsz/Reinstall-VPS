@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div align="center">
   <a href="https://www.cxthhhhh.com/network-reinstall-system-modify">
       <img src="https://raw.githubusercontent.com/MeowLove/Network-Reinstall-System-Modify/master/background/Network-Reinstall-System-Modify_LOGO1.png"  >
