@@ -39,7 +39,7 @@ echo -e "\033[33m Reinstall the system (any Windows / Linux) requires only netwo
 echo -e "\033[33m System requirements: Any Linux system with GRUB or GRUB2, recommended Rocky8/Debian11/Ubuntu22 \033[0m"
 echo -e "\n"
 echo "---------------------------------------------------------------------------------------------------------------------"
-echo " Default password: cxthhhhh.com"
+echo " Default password: zoxxenon"
 echo "---------------------------------------------------------------------------------------------------------------------"
 echo -e "\n"
 sleep 6s
@@ -54,19 +54,19 @@ if [ -f "/usr/bin/apt-get" ]; then
   isDebian=$(cat /etc/issue | grep Debian)
   if [ "$isDebian" != "" ]; then
     echo 'Current system is Debian'
-    apt-get install -y xz-utils openssl gawk file wget curl
-    apt install -y xz-utils openssl gawk file wget curl
+    apt-get install -y xz-utils openssl gawk file wget curl >>/dev/null
+    apt install -y xz-utils openssl gawk file wget curl >>/dev/null
     sleep 3s
   else
     echo 'Current system is Ubuntu'
-    apt-get install -y xz-utils openssl gawk file wget curl
-    apt install -y xz-utils openssl gawk file wget curl
+    apt-get install -y xz-utils openssl gawk file wget curl >>/dev/null
+    apt install -y xz-utils openssl gawk file wget curl >>/dev/null
     sleep 3s
   fi
 else
   echo 'Current system is CentOS/Rocky/Oracle/RHEL'
-  yum install -y xz openssl gawk file wget curl
-  dnf install -y xz openssl gawk file wget curl
+  yum install -y xz openssl gawk file wget curl >>/dev/null
+  dnf install -y xz openssl gawk file wget curl >>/dev/null
   sleep 3s
 fi
 
@@ -77,9 +77,10 @@ echo " Detection system information. . . "
 echo "---------------------------------------------------------------------------------------------------------------------"
 echo -e "\n"
 sleep 1s
+clear
 
 CXTDTYPE=$(fdisk -l | grep -o gpt | head -1)
-if [ $CXTDTYPE == "gpt" ] || [ $CXTDTYPE == "GPT" ]; then
+if [ ! -z "$CXTDTYPE" ] && { [ "$CXTDTYPE" == "gpt" ] || [ "$CXTDTYPE" == "GPT" ]; }; then
   echo "UEFI..."
   CXTisUEFI="(True)"
 else
@@ -134,7 +135,7 @@ echo " Start system installation. . . "
 echo "---------------------------------------------------------------------------------------------------------------------"
 echo -e "\n"
 sleep 3s
-
+clear
 if [ $CXTaddVER == "arm64" ]; then
   echo -e "\n"
   clear
@@ -147,7 +148,7 @@ if [ $CXTaddVER == "arm64" ]; then
   echo "=                   ARM64                                      ="
   echo "=        Network-Reinstall-System-Modify (Graphical Install)   ="
   echo "=                                                              ="
-  echo "=             V5.3.0             https://www.cxthhhhh.com      ="
+  echo "=             V5.3.0                                           ="
   echo "=                                                              ="
   echo "================================================================"
   echo "                                                                "
@@ -247,7 +248,7 @@ elif [ [$CXTisUEFI == "是(True)"] && [ $CXTaddVER != "arm64" ] ]; then
   echo "=            [UEFI]                                            ="
   echo "=        Network-Reinstall-System-Modify (Graphical Install)   ="
   echo "=                                                              ="
-  echo "=             V5.3.0             https://www.cxthhhhh.com      ="
+  echo "=             V5.3.0                                           ="
   echo "=                                                              ="
   echo "================================================================"
   echo "                                                                "
@@ -359,7 +360,7 @@ else
   echo "=                     [BIOS_LEGACY]                            ="
   echo "=        Network-Reinstall-System-Modify (Graphical Install)   ="
   echo "=                                                              ="
-  echo "=             V5.3.0             https://www.cxthhhhh.com      ="
+  echo "=             V5.3.0                                           ="
   echo "=                                                              ="
   echo "================================================================"
   echo "                                                                "
@@ -367,7 +368,7 @@ else
   echo "                                                                "
   echo "   1) CentOS 9"
   echo "   2) CentOS 8"
-  echo "   3) CentOS 7【Recommend】"
+  echo "   3) Debian 7【Recommend】"
   echo "   4) Debian 11【Recommend】"
   echo "   5) Debian 10"
   echo "   6) OpenWRT"
@@ -440,7 +441,6 @@ else
   11)
     echo -e "\nInstall...Ubuntu 20\n"
     read -s -n1 -p "(Press any key to continue...)"
-    bash ~/Core_Install.sh -u 20.04 -a -v 64 $UbuntuMirrors $CXTaddLine
     ;;
   21)
     echo -e "\nInstall...Windows Server 2022\n"
