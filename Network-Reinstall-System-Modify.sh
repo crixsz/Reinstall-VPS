@@ -1,21 +1,5 @@
 #!/bin/bash
 
-## License: GPL
-## The CXT Version of one-click network reinstallation system Magic revision.
-## It can reinstall CentOS, Rocky, Debian, Ubuntu, Oracle and other General Operating Systems (continuously added) via the network in one click.
-## It can reinstall Windwos 2022, 2019, 2016, 2012R2, Windows 10, 11 and other Windows systems (continuously added) via the network in one click.
-## Support GRUB or GRUB2 for installing a clean minimal system.
-## Technical support is provided by the CXT (CXTHHHHH.com). (based on the original Version of Vicer)
-
-## Magic Modify Version author:
-## Default root password: cxthhhhh.com
-## WebSite: https://cxthhhhh.com
-## Written By CXT (CXTHHHHH.com)
-
-## Original Version author:
-## Blog: https://moeclub.org
-## Written By MoeClub.org (Vicer)
-
 CXTaddLine="$1"
 CXTaddVER=""
 CXTisUEFI=""
@@ -31,22 +15,22 @@ fi
 echo -e "\n\n\n"
 clear
 echo -e "\n"
-echo "---------------------------------------------------------------------------------------------------------------------"
-echo -e "\033[33m Network-Reinstall-System-Modify Tools V5.3.0 2022/07/18 \033[0m"
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo -e "-----------------------------------------------------------------------------------------------"
+echo -e "               \033[33m Network-Reinstall-System-Modify Tools V5.3.0\033[0m                    "
+echo -e "-----------------------------------------------------------------------------------------------"
 echo -e "\n"
 echo -e "\033[33m Reinstall the system (any Windows / Linux) requires only network and one click \033[0m"
-echo -e "\033[33m System requirements: Any Linux system with GRUB or GRUB2, recommended Rocky8/Debian11/Ubuntu22 \033[0m"
+echo -e "\033[33m System requirements: Any Linux system with GRUB or GRUB2,recommended Rocky8/Debian11/Ubuntu22 \033[0m"
 echo -e "\n"
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo " Default password: zoxxenon"
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo -e "\n"
-sleep 6s
+sleep  5s
 
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo " Pre-environment preparation. . ."
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo -e "\n"
 sleep 2s
 
@@ -70,11 +54,11 @@ else
   sleep 3s
 fi
 
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo " Pre-environment preparation. . .  【OK】"
 echo -e "\n"
 echo " Detection system information. . . "
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo -e "\n"
 sleep 1s
 clear
@@ -122,7 +106,7 @@ else
 
 fi
 
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo " System information is as follows. . .  【OK】"
 echo -e "\n"
 echo "Your system firmware architecture is: $CXTaddVER"
@@ -132,7 +116,7 @@ echo -e "\n"
 echo "Accelerating Chinese mainland with CDN: $CXTisCN"
 echo -e "\n"
 echo " Start system installation. . . "
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo -e "\n"
 sleep 3s
 clear
@@ -479,7 +463,7 @@ else
   esac
 fi
 
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo -e "\033[32m Start Installation \033[0m"
-echo "---------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------"
 echo -e "\n"
