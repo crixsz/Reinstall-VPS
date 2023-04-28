@@ -1,6 +1,6 @@
 #!/bin/bash
-
-## License: GPL
+# This is a test branch
+##License: GPL
 ## The CXT version of one-click network reinstallation system Magic revision.
 ## It can reinstall CentOS, Rocky, Debian, Ubuntu, Oracle and other General Operating Systems (continuously added) over the network in one click.
 ## It can reinstall Windwos 2022, 2019, 2016, 2012R2, Windows 10, 11 and other Windows systems (continuously added) via the network in one click.
