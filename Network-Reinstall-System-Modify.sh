@@ -425,6 +425,7 @@ else
   11)
     echo -e "\nInstall...Ubuntu 20\n"
     read -s -n1 -p "(Press any key to continue...)"
+    bash ~/Core_Install.sh -u 20.04 -a -v 64 $UbuntuMirrors $CXTaddLine
     ;;
   21)
     echo -e "\nInstall...Windows Server 2022\n"
