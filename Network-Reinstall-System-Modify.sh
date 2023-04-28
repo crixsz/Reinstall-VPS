@@ -90,7 +90,7 @@ if [ $CXTisCN != "Yes" ]; then
 else
   echo "Core Download[CN]..."
   #wget -O
-  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/master/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
+  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/test/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
   CXTrandom=$RANDOM
   if [ $((CXTrandom % 2)) == "0" ]; then
     CentOSMirrors="--mirror http://mirrors.aliyun.com/centos/"
