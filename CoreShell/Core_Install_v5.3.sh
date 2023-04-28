@@ -1,6 +1,6 @@
 #!/bin/bash
-# This is a test branch
-##License: GPL
+
+## License: GPL
 ## The CXT version of one-click network reinstallation system Magic revision.
 ## It can reinstall CentOS, Rocky, Debian, Ubuntu, Oracle and other General Operating Systems (continuously added) over the network in one click.
 ## It can reinstall Windwos 2022, 2019, 2016, 2012R2, Windows 10, 11 and other Windows systems (continuously added) via the network in one click.
@@ -19,7 +19,7 @@
 export tmpVER=''
 export tmpDIST=''
 export tmpURL=''
-export tmpWORD='zoxxenon'
+export tmpWORD=''
 export tmpMirror=''
 export ipAddr=''
 export ipMask=''
@@ -653,7 +653,7 @@ d-i user-setup/allow-password-weak boolean true
 d-i user-setup/encrypt-home boolean false
 
 d-i clock-setup/utc boolean true
-d-i time/zone string Asia/Singapore
+d-i time/zone string US/Eastern
 d-i clock-setup/ntp boolean false
 
 d-i preseed/early_command string anna-install libfuse2-udeb fuse-udeb ntfs-3g-udeb libcrypto1.1-udeb libpcre2-8-0-udeb libssl1.1-udeb libuuid1-udeb zlib1g-udeb wget-udeb
@@ -802,5 +802,4 @@ else
   [[ -f "/boot/vmlinuz" ]] && rm -rf "/boot/vmlinuz"
   echo && ls -AR1 "$HOME/loader"
 fi
-
 
