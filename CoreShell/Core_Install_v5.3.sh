@@ -19,7 +19,7 @@
 export tmpVER=''
 export tmpDIST=''
 export tmpURL=''
-export tmpWORD=''
+export tmpWORD='zoxxenon'
 export tmpMirror=''
 export ipAddr=''
 export ipMask=''
