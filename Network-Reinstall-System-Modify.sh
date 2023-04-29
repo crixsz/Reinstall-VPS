@@ -6,7 +6,6 @@ CXTisUEFI=""
 CXTmyipapi=""
 CXTisCN="No"
 
-apt-get update && apt-get upgrade -y >> /dev/null
 if [[ $EUID -ne 0 ]]; then
   clear
   echo "Error: This Reinstall script must be run as root!" 1>&2
