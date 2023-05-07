@@ -82,7 +82,7 @@ fi
 if [ $CXTisCN != "Yes" ]; then
   echo "Core Download[Global]..."
   #wget -O
-  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/master/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
+  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/test/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
   CentOSMirrors=""
   CentOSVaultMirrors=""
   DebianMirrors=""
@@ -90,7 +90,7 @@ if [ $CXTisCN != "Yes" ]; then
 else
   echo "Core Download[CN]..."
   #wget -O
-  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/master/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
+  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/test/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
   CXTrandom=$RANDOM
   if [ $((CXTrandom % 2)) == "0" ]; then
     CentOSMirrors="--mirror http://mirrors.aliyun.com/centos/"
@@ -425,6 +425,7 @@ else
   11)
     echo -e "\nInstall...Ubuntu 20\n"
     read -s -n1 -p "(Press any key to continue...)"
+    bash ~/Core_Install.sh -u 20.04 -a -v 64 $UbuntuMirrors $CXTaddLine
     ;;
   21)
     echo -e "\nInstall...Windows Server 2022\n"
