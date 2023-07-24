@@ -11,19 +11,13 @@ if [[ $EUID -ne 0 ]]; then
   echo "Error: This Reinstall script must be run as root!" 1>&2
   exit 1
 fi
-
-
   echo "Core Download[Global]..."
-  #wget -O
   wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/test/CoreInstall.sh' && chmod a+x ~/Core_Install.sh
   CentOSMirrors=""
   CentOSVaultMirrors=""
   DebianMirrors=""
   UbuntuMirrors=""
-clear
-  clear
   echo -e "\n\n\n"
-  clear
   echo -e "\n"
   echo "                                                           "
   echo "================================================================"
