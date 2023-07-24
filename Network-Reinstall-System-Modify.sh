@@ -15,7 +15,7 @@ fi
 
   echo "Core Download[Global]..."
   #wget -O
-  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/test/CoreShell/Core_Install_v5.3.sh' && chmod a+x ~/Core_Install.sh
+  wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/test/CoreInstall.sh' && chmod a+x ~/Core_Install.sh
   CentOSMirrors=""
   CentOSVaultMirrors=""
   DebianMirrors=""
