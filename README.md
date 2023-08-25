@@ -1,4 +1,4 @@
-<p align="center"><h1><b>🄽🄴🅃🅆🄾🅁🄺 🅁🄴🄸🄽🅂🅃🄰🄻🄻 🄼🄾🄳🄸🄵🅈 🅅🄿🅂</h1></b>
+<p align="center"><h1><b>NETWORK REINSTALL MODIFY FOR VPS</h1></b>
   <p align="center">
     <img src="https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)">
     <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
