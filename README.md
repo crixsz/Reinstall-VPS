@@ -8,5 +8,5 @@
 </p>
 
 ```html
-wget https://raw.githubusercontent.com/crixsz/Reinstall-VPS/test/Network-Reinstall-System-Modify.sh &&chmod +x Network-Reinstall-System-Modify.sh && bash Network-Reinstall-System-Modify.sh
+wget https://raw.githubusercontent.com/crixsz/Reinstall-VPS/main/Network-Reinstall-System-Modify.sh &&chmod +x Network-Reinstall-System-Modify.sh && bash Network-Reinstall-System-Modify.sh
 ```
