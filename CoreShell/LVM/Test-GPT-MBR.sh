@@ -22,8 +22,8 @@ LVNAME=`lvdisplay | grep "LV Name" | awk ' ''{print $3}'`
 echo " LVNAME= "+$LVNAME
 
 # 判断MBR还是GPT
-CXTDTYPE=`fdisk -l | grep -o gpt | head -1`
-if [ $CXTDTYPE == "gpt" ] || [ $CXTDTYPE == "GPT" ];then
+DTYPE=`fdisk -l | grep -o gpt | head -1`
+if [ $DTYPE == "gpt" ] || [ $DTYPE == "GPT" ];then
 # 创新新的GPT分区为LVM
 echo "(GPT) Creating new partition..."
 PART=$DISK"4"

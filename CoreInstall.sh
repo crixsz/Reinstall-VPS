@@ -1,16 +1,10 @@
 #!/bin/bash
 
 ## License: GPL
-## The CXT version of one-click network reinstallation system Magic revision.
+## One-click network reinstallation system.
 ## It can reinstall CentOS, Rocky, Debian, Ubuntu, Oracle and other General Operating Systems (continuously added) over the network in one click.
-## It can reinstall Windwos 2022, 2019, 2016, 2012R2, Windows 10, 11 and other Windows systems (continuously added) via the network in one click.
+## It can reinstall Windows 2022, 2019, 2016, 2012R2, Windows 10, 11 and other Windows systems (continuously added) via the network in one click.
 ## Support GRUB or GRUB2 for installing a clean minimal system.
-## Technical support is provided by the CXT (CXTHHHHH.com). (based on the original version of Vicer)
-
-## Magic Modify version author:
-## Default root password: cxthhhhh.com
-## WebSite: https://cxthhhhh.com
-## Written By CXT (CXTHHHHH.com)
 
 ## Original version author:
 ## Blog: https://moeclub.org
