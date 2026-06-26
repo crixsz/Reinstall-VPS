@@ -75,7 +75,7 @@ fi
 
 # ─── Download Core ─────────────────────────────────────────────────
 echo -ne "\n    ${C_YELLOW}${C_BOLD}⟳${C_RESET}  ${C_YELLOW}Downloading core installer...${C_RESET}"
-wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/Reinstall-VPS/Reinstall-VPS/main/CoreInstall.sh' && chmod a+x ~/Core_Install.sh
+wget --no-check-certificate -qO ~/Core_Install.sh 'https://raw.githubusercontent.com/crixsz/Reinstall-VPS/main/CoreInstall.sh' && chmod a+x ~/Core_Install.sh
 if [ $? -eq 0 ]; then
   echo -e "  ${C_GREEN}${C_BOLD}✓ Done${C_RESET}"
 else
