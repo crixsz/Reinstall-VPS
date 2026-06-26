@@ -24,25 +24,22 @@ C_BG_HEADER='\033[48;5;236m'
 print_header() {
   clear
   echo ""
-  echo -e "${C_CYAN}${C_BOLD}    ╔══════════════════════════════════════════════════════════╗${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║                                                          ║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_WHITE}${C_BOLD}      ███╗   ██╗███████╗██╗   ██╗██╗     ███████╗       ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_WHITE}${C_BOLD}      ████╗  ██║██╔════╝██║   ██║██║     ╚════██║       ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_WHITE}${C_BOLD}      ██╔██╗ ██║█████╗  ██║   ██║██║         ██╔╝       ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_WHITE}${C_BOLD}      ██║╚██╗██║██╔══╝  ██║   ██║██║         ██╔╝        ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_WHITE}${C_BOLD}      ██║ ╚████║███████╗╚██████╔╝███████╗    ██║         ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_WHITE}${C_BOLD}      ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚══════╝    ╚═╝         ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║                                                          ║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_GRAY}           Network Reinstall System · One Click           ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║${C_DIM}                    BIOS / LEGACY MODE                   ${C_CYAN}${C_BOLD}║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ║                                                          ║${C_RESET}"
-  echo -e "${C_CYAN}${C_BOLD}    ╚══════════════════════════════════════════════════════════╝${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}╔══════════════════════════════════════════════════════════╗${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_WHITE}${C_BOLD}      ███╗   ██╗███████╗██╗   ██╗██╗     ███████╗       ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_WHITE}${C_BOLD}      ████╗  ██║██╔════╝██║   ██║██║     ╚════██║       ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_WHITE}${C_BOLD}      ██╔██╗ ██║█████╗  ██║   ██║██║         ██╔╝       ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_WHITE}${C_BOLD}      ██║╚██╗██║██╔══╝  ██║   ██║██║         ██╔╝        ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_WHITE}${C_BOLD}      ██║ ╚████║███████╗╚██████╔╝███████╗    ██║         ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_WHITE}${C_BOLD}      ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚══════╝    ╚═╝         ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_GRAY}           Network Reinstall System · One Click           ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}║${C_DIM}                    BIOS / LEGACY MODE                   ${C_CYAN}${C_BOLD}║${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}╚══════════════════════════════════════════════════════════╝${C_RESET}"
   echo ""
 }
 
 print_section() {
   echo -e "    ${C_CYAN}${C_BOLD}┌──────────────────────────────────────────────────────────┐${C_RESET}"
-  echo -e "    ${C_CYAN}${C_BOLD}│${C_MAGENTA}${C_BOLD}  $1${C_CYAN}${C_BOLD}$(printf '%*s' $((47 - ${#1})) '')│${C_RESET}"
+  echo -e "    ${C_CYAN}${C_BOLD}│${C_MAGENTA}${C_BOLD}  $1${C_RESET}"
   echo -e "    ${C_CYAN}${C_BOLD}└──────────────────────────────────────────────────────────┘${C_RESET}"
 }
 
