@@ -35,13 +35,14 @@ fi
   echo "   2) CentOS 8"
   echo "   3) Debian 7【Recommend】"
   echo "   4) Debian 11【Recommend】"
-  echo "   5) Debian 10"
-  echo "   6) OpenWRT"
-  echo "   7) Oracle 9"
-  echo "   8) Rocky 9"
-  echo "   9) Rocky 8【Recommend】"
-  echo "   10) Ubuntu 22【Recommend】"
-  echo "   11) Ubuntu 20"
+  echo "   5) Debian 12【Recommend】"
+  echo "   6) Debian 10"
+  echo "   7) OpenWRT"
+  echo "   8) Oracle 9"
+  echo "   9) Rocky 9"
+  echo "   10) Rocky 8【Recommend】"
+  echo "   11) Ubuntu 22【Recommend】"
+  echo "   12) Ubuntu 20"
   echo "   21) Windows Server 2022【Recommend】"
   echo "   22) Windows Server 2019"
   echo "   23) Windows Server 2016"
@@ -74,36 +75,41 @@ case $N in
     bash ~/Core_Install.sh -d 11 -a -v 64 $DebianMirrors $CXTaddLine
     ;;
   5)
+    echo -e "\nInstall...Debian 12\n"
+    read -s -n1 -p "(Press any key to continue...)"
+    bash ~/Core_Install.sh -d 12 -a -v 64 $DebianMirrors $CXTaddLine
+    ;;
+  6)
     echo -e "\nInstall...Debian 10\n"
     read -s -n1 -p "(Press any key to continue...)"
     bash ~/Core_Install.sh -d 10 -a -v 64 $DebianMirrors $CXTaddLine
     ;;
-  6)
+  7)
     echo -e "\nInstall...OpenWRT\n"
     read -s -n1 -p "(Press any key to continue...)"
     bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/OpenWRT-Virtualization-Servers/Stable/openwrt-x86-64-generic-squashfs-combined.img.gz" $DebianMirrors $CXTaddLine
     ;;
-  7)
+  8)
     echo -e "\nInstall...Oracle 9\n"
     read -s -n1 -p "(Press any key to continue...)"
     bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/Oracle/Oracle_9.X_x64_Legacy_NetInstallation_Stable_v1.8.vhd.gz" $DebianMirrors $CXTaddLine
     ;;
-  8)
+  9)
     echo -e "\nInstall...Rocky 9\n"
     read -s -n1 -p "(Press any key to continue...)"
     bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/Rocky/Rocky_8.X_x64_Legacy_NetInstallation_Stable_v6.8.vhd.gz" $DebianMirrors $CXTaddLine
     ;;
-  9)
+  10)
     echo -e "\nInstall...Rocky 8\n"
     read -s -n1 -p "(Press any key to continue...)"
     bash ~/Core_Install.sh -a -v 64 -dd "https://odc.cxthhhhh.com/d/SyStem/Rocky/Rocky_8.X_x64_Legacy_NetInstallation_Stable_v6.8.vhd.gz" $DebianMirrors $CXTaddLine
     ;;
-  10)
+  11)
     echo -e "\nInstall...Ubuntu 22\n"
     read -s -n1 -p "(Press any key to continue...)"
     bash ~/Core_Install.sh -u 22.04 -a -v 64 $UbuntuMirrors $CXTaddLine
     ;;
-  11)
+  12)
     echo -e "\nInstall...Ubuntu 20\n"
     read -s -n1 -p "(Press any key to continue...)"
     bash ~/Core_Install.sh -u 20.04 -a -v 64 $UbuntuMirrors $CXTaddLine
